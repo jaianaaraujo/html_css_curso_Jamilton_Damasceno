@@ -1,0 +1,46 @@
+/* ************ SELETOR UNIVERSAL *********** */
+
+*{}  /* Aplica-se em todos os elementos no documento. Seleciona todos os elementos da página */
+
+
+
+/* ******** SELETOR DE TEXTO ******** */
+h1, h2, h3, h4 {
+
+}
+
+
+/* ********  SELETOR DE CLASSE *******  */
+
+.verde{} /* seleciona qualquer elemento cujo atributo class tem o valor "verde" */
+
+p.verde{} /* seleciona o elemento <p> cujo atributo class tem o valor verde */
+
+
+
+/* ****** SELETOR DE ID */
+
+#cabeca{}
+
+
+
+/* ********** SELETOR DE FILHO ******** */
+
+li>a{} /* quaisquer elementos a que sejam filhos de li. Seleciona um eleento que é filho direto de outro */
+
+
+/* ********* SELETOR DE DESCENDENTE ******** */
+
+p a {}  /* Seleciona um elemento que é descendente de outro elemento especifico (e não apenas filho direto desse elemento), mesmo se houver outros elementos aninhados entre eles  */
+
+
+/* *********** SELETORES DE IRMÃOS ADJACENTES ************ */
+
+h1+p{} /* Seleciona o elemento que é irmão próximo de outro */
+
+
+
+/* *********** SELETORES DE IRMÃO GERAL *********** */
+
+h1 ~p{} /* Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente */
+

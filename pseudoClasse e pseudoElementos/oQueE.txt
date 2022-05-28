@@ -1,0 +1,108 @@
+// ************** PSEUDO-SELETORES *************
+
+** O que são PSEUDO-SELETORES:
+
+Os pseudo-seletores nos permitem
+uma maneira alternativa de criar
+elementos, e de aplicar estilos em
+função dos estados e da organização
+desses elementos
+
+
+++ Estão divididos em dois grandes grupos:
+As pseudo-classes, que nos permitem aplicar estilos em função de:
+
+● Os estados dos elementos.
+● A publicação dentro da estrutura do HTML.
+● A presença de certos atributos dentro do HTML.
+
+Os pseudo-elementos, que nos permitem criar elementos desde o CSS sem
+ter que modificar a estrutura do HTML
+
+
+// **************** PSEUDO-CLASSE ************
+
+As pseudo-classes são agregadas nos seletores que já conhecemos.
+Normalmente, escrevemos o nome do seletor primeiro, seguido de dois pontos
+: e a pseudo-classe que queremos utilizar.
+Algumas pseudo-classes podem se aplicar a todos os elementos HTML, exceto
+algumas pseudo-classes específicas que só se aplicam a alguns elementos.
+
+
+EXEMPLO: selector:pseudo-classe {
+ propriedade: valor;
+} 
+
+
+***** LINKS*****
+
+LINKS: Os links são elementos que tem pseudo-classes específicas.
+Neste caso são :link , :visited, :hover e :active
+
+1) :visited  = Se utiliza para aplicar estilo aos links <a></a> que já tenham sido visitados
+pelo menos uma vez pelo usuário. Seu estilo também pode ser anulado por outras propriedades de tipo de link
+que foram atribuídas.
+
+
+2) :hover    = Essa pseudo-classe está relacionada na maioria das vezes com os links, mas
+pode ser relacionada com qualquer elemento HTML.
+Se utiliza para aplicar estilo a qualquer elemento que o usuário posicione o
+cursor.
+
+
+3) :active    = Se utiliza para aplicar estilo aos links <a></a> que estão sendo clicados pelo
+usuário. Normalmente se utiliza para fazer uma animação do click.
+Seus estilos também poderão ser anulados por essa pseudo-classe atribuída.
+
+
+
+************* INPUTS
+
+INPUTS: Os inputs são outro tipo de elemento que tem pseudo-classes específicas.
+Nesse caso são: :focus , :enabled, :disabled e :target
+
+
+1) :focus    =  Se aplica quando um elemento recebe o foco, ou seja, quando o usuário
+clica nesse elemento.
+O caso mais comum dessa pseudo-classe é em campos de preenchimento:
+quando o usuário clica, o campo recebe um destaque.
+
+
+2) :disabled   = Se aplica quando um elemento pode ser considerado como desabilitado.
+Normalmente, essa pseudo-classe é utilizada em campos no formulário que
+não podem ser preenchidos por algum motivo.
+
+
+3) :enabled    = Defina uma cor de fundo para todos os elementos
+
+
+4) :target     = Destaque a âncora HTML ativa:
+
+
+
+
+// **************** PSEUDO-ELEMENTOS ************
+
+** O QUE É ? Para usá-los, escrevemos o nome do seletor primeiro, seguido de dois pontos
+colocados duas vezes :: e o pseudo-elemento que queremos utilizar.
+Os mais utilizados são ::before e ::after, mas existem muitos mais, como:
+::first-letter e ::first-line.
+
+
+
+1) ::before    =  Se utiliza junto com a propriedade content para introduzir conteúdo no
+documento usando CSS.
+Esse novo conteúdo aparecerá antes do conteúdo interno do elemento
+
+EX: div::before {
+ content: "Esse aparecerá antes do conteúdo do elemento";
+ color: red;
+ }
+
+
+
+2) ::after     = Se utiliza junto com a propriedade content para introduzir conteúdo no
+documento usando CSS.
+Esse novo conteúdo aparecerá depois do conteúdo interno do elemento
+
+

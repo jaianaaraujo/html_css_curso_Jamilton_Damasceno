@@ -1,0 +1,30 @@
+/* ********** HERANÇA *********   */
+
+
+/* 1. Coloquei uma formatação no body, então todos os elementos que estavam dentro deles  */
+body{
+    color: red;
+    font-size: 16px;
+    border: 1px solid blue /* Ele não atinge os filhos */
+}
+
+/* ATENÇÃO!!!!
+
+border e background por padrão não são herdardos 
+
+*/
+
+
+
+
+/* ESPECIFICIDADE */
+
+/* 1) Em caso de dois seletores iguais, o caracteristica do ultimo que prevalece */
+
+
+#pagina p {
+    color: red !important; /* Caso eu queira que esse subsista coloco !important 
+    - Se um seletor for mais específico que outro a regra mais específica será aplicada (terá precedência sobre regras mais gerais). 
+    */
+}
+

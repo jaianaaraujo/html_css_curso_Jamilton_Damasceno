@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" > <!--  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" -->
+    
+     <!-- No Href, tiramos o site da CDN, e colocamos o arquivo mini bootstrap. Não existe problema em utilizar o site cdn, no entanto, é preferível que use o arquivo para não ficar dependendo -->
+    <!-- INTEGRITY - ele gera uma chave de segurança, para que o navegador saiba de onde está sendo carregado esse arquivo. o CROSSORGIN ajuda nesse processo -->
+    <!-- ATENÃO! Como eu estou carregando o arquivo css direto e não pelo site, o integrity é dispensável -->
+
+    <title>Alinhamento de textos - Bootstrap</title>
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px;">
+    
+    <!-- PARÁGRAFO JUSTIFICADO -->
+
+    <h2>PARÁGRAFO JUSTIFICADO</h2>
+    <br>
+  <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro error sed nam quibusdam natus in, saepe nihil enim iure eveniet repellat esse incidunt ea reprehenderit laborum reiciendis? Ex, voluptatum unde?</p>
+<br><br>
+  
+  <!-- EXIBIR O TEXTO DE ACORDO A TELA QUE ESTÁ SENDO VISUALIZADA -->
+
+  <!-- 
+    XL = extra large: maior ou igual 1200px;
+    LG = large: maior que 992px;
+    MD = medium: maior ou igual 768px;
+    SM = small: maior que 576;
+   -->
+  <p class="text-sm-center">tela &gt;= 576px</p> <!-- Small -->
+  <p class="text-md-right">tela &gt;= 768px</p> <!-- Medium -->
+  <p class="text-lg-left">tela &gt;= 992px</p> <!-- Large -->
+  <p class="text-xl-right">tela &gt;= 1200px</p> <!-- Extra large -->
+
+
+
+  <!-- ELEMENTO BLOCK PARA INLINE -->
+<h2>ELEMENTO BLOCK PARA INLINE</h2>
+<br>
+
+  <h6 class="bg-success    d-inline">Lorem Ipsum</h6>
+  <p  class="bg-success d-inline" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p> <!-- Ele fica com o comportamento inline, ou seja, ocupando apenas o que está escrito e um do lado do outro -->
+  <br><br>
+
+<!-- A tag BG-SUCCESS = ela muda a cor de fundo -->
+
+
+
+<!-- ELEMENTO INLINE PARA BLOCK  -->
+<h2>ELEMENTO INLINE PARA BLOCK</h2>
+<br>
+
+<span class=" bg-success d-block">Lorem ipsum dolor 1</span>
+<br>
+<span  class=" bg-success d-block">Lorem ipsum dolor 2</span> <!-- Ficará um abaixo do outro -->
+
+<br><br>
+
+
+<!-- ELEMENTO INLINE-BLOCK  -->
+<h2>ELEMENTO INLINE-BLOCK</h2>
+<br>
+
+<p class=" bg-success d-inline-block">Lorem ipsum dolor 1</p>
+<br>
+<p  class=" bg-success d-inline-block">Lorem ipsum dolor 2</p> <!-- Ficará um abaixo do outro -->
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

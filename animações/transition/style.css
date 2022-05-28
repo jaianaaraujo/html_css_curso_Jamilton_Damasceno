@@ -1,0 +1,52 @@
+
+/*  ************* TRANSIÇÃO ********
+
+1) Ao criar uma transição podemos modificar o valor de uma propriedade de forma gradual. Para isso, precisamos de algumas coisas: uma propriedade com um valor inicial, uma interação pela qual este valor se modificará e um novo valor que usará essa propriedade
+*/
+
+
+/* ** INTERAÇÃO ** */
+
+button:hover{
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+/* precisamos determinar que o elemento vai sofrer a alteração e qual  o valor da sua propriedade. E nesse caso, a interação ocorrerá quando o usuário colocar o cursor em cima de todo button com a pseudo:classe :hover
+*/
+
+/* =================== VALORES DA TRANSIÇÃO ===============  
+
+
+2) transition-property: definir os nomeas das propriedades css em que o efeito da transição deve aplicar-se. E pode-se criar várias propriedades separadas por virgula. 
+
+3) transition-duration: para estabelecer o tempo que deve durar a transição. por padrão o valor é de 0s (0 segundos) ou 0ms (0 milessegundos), o qual não mosstrará nenhuma animação
+*/
+
+
+button{
+    background-color: #eaeaea;
+    color: #000;
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    transition-property: background-color, color;   
+    transition-duration: 0.15s;
+}
+
+
+/* DE FORMA ABREVIADA */
+
+button{
+    background-color: #ffa500;
+    width: 200px;
+    height: 200px;
+}
+
+button:hover{
+    width: 300px;
+    background-color: #ffff00;
+    transition: width 3s, background 3s;
+    /* transiton: All 3s */
+}
+

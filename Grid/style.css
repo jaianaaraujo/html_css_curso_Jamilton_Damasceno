@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, main, aside, footer {
+    align-items: center;
+    background-color:greenyellow;
+    border-radius: 10px;
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    padding: 25px;
+}
+
+.conteudo {
+    border: 5px solid gray;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 960px;
+    min-height: 600px;
+    /* 
+        Grid layout
+        - display: grid
+        - grid-template-columns
+        - grid-template-rows
+        - minmax()
+        - repeat()
+        - grid-area
+    */
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 2fr; /* podemos utilizar o repeat para diminuir o codigo  e dizer a mesma coisa, exemplo repeat(4, 1fr */
+  
+    /*
+        largura for 1000px
+        500px 500px
+    */
+}

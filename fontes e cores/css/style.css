@@ -1,0 +1,25 @@
+.formatacao{
+    color: #ff2;
+    background-color: plum;
+    /* MODELO - TIPO DE FONTE */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* modelo/ tipo de fonte */
+
+    /* TAMANHO TIPOGRAFADO */
+    font-size: 20px;
+
+    /* ESTILO DA FONTE */
+    font-style: oblique;
+
+    /* GROSSURA */
+    font-weight: bold;
+
+    /* ALINHAMENTO DA FONTE */
+    text-align: center;
+
+    /* DECORAÇÃO  */
+    text-decoration: line-through;
+
+    /* ALTURA DA LINHA */
+    line-height:unset;
+
+}

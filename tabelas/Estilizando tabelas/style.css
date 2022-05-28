@@ -1,0 +1,13 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table{
+    width: 600px;
+
+}
+
+th, td{
+border: 2px solid red; 
+border-collapse: separate; /* Aqui decide se as bordas ficam juntas (coladinhas) uma na outra ou não. */
+}

@@ -1,0 +1,9 @@
+#conteudo{
+    border: 5px dotted red; /* largura, expessura, cor */
+    /* 
+    border-color: red;
+    border-width: 5px;
+    border-style: dotted;
+    */
+}
+

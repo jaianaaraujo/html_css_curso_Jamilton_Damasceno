@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(255, 100 50);
+}
+
+
+strong{
+    background-color: rgba(122, 50, 125, 0.5); /* O ultimo representa a opacidade ue o elemento terá e varia de 0 a 1, quanto menor o número, maior a transparêcia */
+}
+
+P{
+    color: #f05221; /* HEXADECIAMAL - seguido de uma sequência alfanumérico */
+}
+
+/* RGBA */
+#p1 {background-color:rgba(255,0,0,0.3);}
+#p2 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,0,255,0.3);}
+#p4 {background-color:rgba(192,192,192,0.3);}
+#p5 {background-color:rgba(255,255,0,0.3);}
+#p6 {background-color:rgba(255,0,255,0.3);} /* A função rgba () define cores usando o modelo Red-green-blue-alpha (RGBA).Os valores de cor RGBA são uma extensão dos valores de cor RGB com um canal alfa - que especifica a opacidade da cor. */

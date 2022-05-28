@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" > <!--  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" -->
+    
+     <!-- No Href, tiramos o site da CDN, e colocamos o arquivo mini bootstrap. Não existe problema em utilizar o site cdn, no entanto, é preferível que use o arquivo para não ficar dependendo -->
+    <!-- INTEGRITY - ele gera uma chave de segurança, para que o navegador saiba de onde está sendo carregado esse arquivo. o CROSSORGIN ajuda nesse processo -->
+    <!-- ATENÃO! Como eu estou carregando o arquivo css direto e não pelo site, o integrity é dispensável -->
+
+    <title>Formatação de texto</title>
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px; ">
+    
+    <h1>Cabe1</h1>
+    <h2>Cabe2</h2>
+    <h3>Cabe3</h3>
+    <h4>Cabe4</h4>
+    <h5 class="h1">Cabe5</h5> <!-- Quando escrevo a class h1, estou colocando no h5 a configuração do h1 -->
+    <h6>cabe6</h6>
+
+    <br>
+    <br>
+
+    <!-- Display classes - Maior destaque -->
+
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1> 
+    <!-- O display muda a textura e tamanho, é bastante usado quando queremos destacar algo na página -->
+
+<br>
+<br>
+<!-- PARÁGRAFO -->
+<h2>PARÁGRAFO - DESTAQUE COM LEAD</h2>
+<br>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum sequi eum sed eveniet magni, officiis reiciendis maxime praesentium autem corporis optio ipsa beatae dignissimos iure soluta dolor deleniti ducimus.</P>
+
+<P class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde repellat fugiat numquam natus? Vitae in ratione, voluptatem aut, mollitia impedit eius molestias necessitatibus unde voluptatibus veniam eveniet aspernatur harum.</P> <!-- A class LEAD destaca o parágrafo -->
+<!-- A class LEAD não precisa ser aplicada apenas em um parágrafo, posso aplicá-la em um span, uma div e assim por diante -->
+
+<br>
+<h2>PARÁGRAFO MONOSPACE</h2>
+<!-- PARÁGRAFO MONOSPACE -->
+<!-- Monospace é um padrão que era utilizado em máquinas de escrever, a mesma largura e distanciamento para todas as letras -->
+<br>
+<p class="text-monospace">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, perspiciatis iusto. Amet beatae dolor magni dolores. Officia neque explicabo voluptates saepe, sint porro quisquam iusto magnam culpa autem impedit libero?</p>
+
+
+<!-- CLASSES DE ESTILO -->
+<br>
+<h2>CLASSES DE ESTILOS</h2>
+<br>
+
+<p class="font-weight-bold">Texto negrito</p>
+<p class="font-weight-normal">Texto normal</p>
+<p class="font-italic">Texto Itálico</p>
+<br>
+
+<!-- TRANSFORMAÇÕES DE TEXTOS -->
+
+<h2>TRANSFORMAÇÕES DE TEXTOS</h2>
+<br>
+<p class="text-uppercase">Letras Maíusculas</p>
+<p class="text-lowercase">Letras Minúsculas</p>
+<p class="text-capitalize">primeira letra maíusculas</p>
+<br>
+<br>
+
+
+<!-- ALINHAMENTOS -->
+
+<h2>ALINHAMENTOS</h2>
+
+<p class="text-right">Direita</p>
+<p class="text-left">Esquerda</p>
+<p class="text-center">Centralizado</p>
+<br><br>
+
+
+<!-- BLOCO DE CITAÇÃO -->
+
+<blockquote class="blockquote  text-right"> <!-- posso fazer combinações de classes -->
+  <p>Esse é um bloco de citação!</p>
+</blockquote>
+
+<br><br>
+
+
+<!-- BLOCO DE CITAÇÃO COM RODAPÉ -->
+
+<h2>BLOCO DE CITAÇÃO COM RODAPÉ</h2>
+<br>
+
+<blockquote>
+  <p class="blockquote  text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repudiandae! Magnam, eligendi est asperiores obcaecati, nisi dolor magni eius a excepturi debitis neque repellat maxime, accusamus delectus hic soluta nam?</p>
+  <footer class="blockquote-footer"> Por <!-- Ele criar uma configuração doferenciada para o rodapé e substitui o por, colocando um traço -->
+<cite>Jaiana Araújo</cite> <!-- Quando utilizo o cite ele fica itálico, muda a formatação do texto -->
+  </footer>
+</blockquote>
+
+
+<!-- TRUNCAR TEXTOS OU CORTAR TEXTOS -->
+
+<br><br>
+<h2>TRUNCATE</h2>
+<p class="text-truncate">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur delectus voluptatibus perferendis explicabo modi, natus doloremque voluptate ratione sunt adipisci ab cupiditate culpa velit voluptates veniam consequuntur tempore dignissimos recusandae.
+</p>
+<!-- Ele corta o texto, observe os tres pontinhos, e quando passa o mouse em cima, ele aparece o texto completamente, ou quando vai aumentando a tela, ele vai aparecendo -->
+
+<br><br>
+
+
+<!-- LISTAS SEM ESTILOS -->
+<h2>LISTAS SEM ESTILOS</h2>
+
+<ul class="list-unstyled"><!-- removendo o estilo da lista -->
+  <li >Item 1</li> 
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<br><br>
+
+<!-- LISTAS INLINE -->
+<h2>LISTAS INLINE</h2>
+<ul class="list-inline"><!-- removendo o estilo da lista -->
+  <li class="list-inline-item">Item 1</li> 
+  <li class="list-inline-item">Item 2</li>
+  <li class="list-inline-item">Item 3</li>
+</ul>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

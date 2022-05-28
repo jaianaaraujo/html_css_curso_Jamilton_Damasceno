@@ -1,0 +1,70 @@
+========= O QUE É? ======
+
+Flexbox é um modelo de layout unidimensional que podemos utilizar para organizar, alinhar e agrupar os nossos elementos de uma melhor
+maneira. Dessa maneira podemos utilizar elementos uns aos lados dos outros como na maioria dos sites. 
+
+
+==== OBJETIVO
+
+Quando pensamos em flexbox sempre temos que ter em mente que iremos
+estilizar o elemento pai para que ele trate os seus elementos filhos de uma forma diferente.
+
+
+
+== COMPORTAMENTO UTILIZANDO FLEX 
+
+Com a utilização do Flex nós podemos organizar nossos elementos de uma maneira diferente que o HTML organiza por
+padrão. É possível agora agruparmos em uma mesma linha os elementos filhos que antes estavam um a baixo dos outros.
+
+
+
+======== FLEX-DIRECTION
+
+Com flex-direction é possível alterarmos as direções em que nossos Elementos Filhos serão organizados.
+
+== FLEX-DIRECTION: COLUMN - alinha um  item por linha 
+
+
+== FLEX-DIRECTION: ROW - alinha vários itens por linha 
+
+
+======= FLEX-WRAP: WRAP
+
+Com flex-wrap é possível dizermos que os nossos elementos podem pular para a linha de baixo caso não haja espaço para ele existir na linha de cima.
+
+
+
+======= JUSTIFY-CONTENT
+
+Com justify-content é possível alinharmos horizontalmente nossos elementos.
+
+
+=== JUSTIFY-CONTENT: CENTER - estamos alinhando todos os itens para o centro horizontal do elemento pai
+
+
+
+======== ALIGN-ITEMS
+
+Com align-items é possível alinharmos verticalmente nossos elementos.
+
+=== ALIGN-ITENS: CENTER = alinhar todos os elementos ao centro da linha verticalmente
+
+
+
+
+========= GAP
+
+Com gap é possível informarmos um valor para criarmos um espaço entre os itens.
+
+
+EX= gap: 24px - Ele cria um espaço entre os elementos filhos de nosso Elemento pai
+
+
+
+
+
+
+
+
+
+

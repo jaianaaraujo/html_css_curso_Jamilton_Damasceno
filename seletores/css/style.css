@@ -1,0 +1,68 @@
+
+/* ********* SELETORES DE ELEMENTOS ******** */
+
+    body { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif};  /* Escolhemos o seletor onde aplicaremos as propriedades (body). Selecionamos a propriedade (font-family). E depois dos dois pontos, selecionamos o valor (sans-serif), que especificará o comportamento ue a propriedade vai ter */
+
+
+/* ************ SELETOR UNIVERSAL ******************* */
+
+ *{background-color: blue}; /* Quando usamos astericos ( *), estamos selecionando universalmente, ou seja, estamos selecioando tudo no  html*/
+ 
+
+
+/* ********** SELECIONANDO A CLASS **************  */
+
+.noticias{
+    color: violet;
+}
+
+
+
+/* ********** SELECIONANDO O ID **************  */
+
+#bahia{color: blue}
+
+
+
+/* **************  SELETORES EM GRUPO ********* */
+
+#bahia, body{
+    background-color: powderblue;
+}
+
+
+/* **************  SELETORES DESCENDENTES ********* */
+
+nav a { color: blue }  /* escrevemos o seletor
+ancestral seguido do seletor descendente, separados por um espaço.
+A seguir, estamos selecionando apenas os elementos a que sejam
+descendentes do elemento nav - inclusive os indiretos, se houver! */
+
+
+/* **************  SELETORES DESCENDENTES  DIRETOS ********* */
+
+nav > a { color: blue } /* Para selecionar apenas descendentes diretos, escrevemos o seletor ancestral
+seguido do seletor descendente, separados por um >.
+A seguir, estamos selecionando apenas os elementos a que sejam
+descendentes diretos do elemento nav.
+ */
+
+
+ /* **************  SELETORES ADJACENTES ********* */
+
+  div ~ p { color: blue } /* Para selecionar todos os elementos adjacentes, escrevemos o seletor anterior seguido do seletor adjacente, separados por um ~ */
+ 
+
+ /* **************  SELETORES ADJACENTES DIRETO ********* */
+
+ div + p { color: blue } /* Para selecionar apenas o primeiro elemento adjacente, escrevemos o seletor anterior seguido do seletor adjacente, separados por um +.
+ A seguir, estamos selecionando apenas o elemento p que seja imediatamente
+ adjacente ao elemento div: */
+
+
+ /* **************  SELETORES ADJACENTES ********* */
+
+ h2.subtitulo { color: red } /* Estes seletores afetam o(s) elemento(s) que cumpre(m) todas as condições estabelecidas. No exemplo a seguir, vamos chamar o elemento h2 designado para a classe subtitulo */
+
+/* ATENÇÃO!!!       Para chamá-los a partir do CSS, você só precisa adicionar um seletor ao lado do outro, sem separadores, cada um com a sintaxe correspondente (id, classe
+ou tag) */

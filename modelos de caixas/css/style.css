@@ -1,0 +1,12 @@
+.conteudo{
+    border: 1px solid red;
+    padding: 20px; /* ESPAÇAMENTO INTERNO - como coloquei só o padding aqui, retornará todos os lados*/
+
+    width: 150px;
+
+    margin: 20px; /* ESPAÇAMENTO EXTERNO - como useu uma única class para 2 caixas, e coloquei a mesma margin na class, ambas as caixas receberam a margem, sendo que, a nnumeração maior prevalecerá */
+
+    border-radius: 20px; /* ARREDONDAMENTO DAS BORDAS */
+
+    
+}

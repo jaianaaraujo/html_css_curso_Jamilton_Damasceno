@@ -1,0 +1,31 @@
+/* CRIANDO UM ANIMAÇÃO
+
+1) Podemos criar animações que podemos reutilizar. Nesse caso, podemos personalizar as transições durante toda animação em todos os pontos (tempos) que queremos. As animações começam de 0% a 100%.
+
+2) @keyframes - é uma palavra reservada e associamos ela a um nome, por exemplo, @keyframes fantasma.
+
+3) dentro das chaves modificaremos os valores de determinadas propriedades de acordo com a animação desejada: de 0 a 100% nos pontos que queremos.
+*/
+
+@keyframes fantasma {
+    0% {opacity: 0%}
+    25% {transform: translateY(-20px);opacity: 100%}
+    100% {opacity: 0%}
+}
+
+/* ATRIBUINDO UMA ANIMAÇÃO
+
++ animation-name : para definir qual nome da animação que queremos utilizar
+
++ animation-duration: Para estabelecer o tempo que deve durar a animação que queremos utilizar. Os valores podem ser em segundos ou milesegundos
+
++ animation-interation-count: para definir a quantidade de vezes que a animação repetirá. Pode ser um número ou a palavra INFINITE para que reproduza infinitamente
+*/
+
+/* DE FORMA ABREVIADA */
+
+.fantasma{
+    animation: fantasma 3s infinite;
+    animation: fantasma;
+
+}

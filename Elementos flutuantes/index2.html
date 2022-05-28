@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos 2</title>
+
+    <style>
+                .conteudo{
+            background: blue;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: left;
+        }
+
+     
+        .clear{
+            clear: left; /* A propriedade clear serve para desobstruir, no caso o texo estava em volta do conteudo dois, no entanto, quando damos um clear: left  */
+            /* BOTH = Quando utilizamos o both, ele irá limpar tanto no lado esquerdo, quanto no lado direito */
+        }
+
+        /* DIV DENTO DA DIV */
+
+#principal{
+    border: 1px solid red;
+    background-color: lawngreen; /* Observe que como colocamos um div dentro de outra div, estamos aqui, inserindo fundo na div princial, no entanto, como estamos usando float nos outros elementos, é como se os outros elementos não estivessem realmente dentro dessa, e para ele expandir, utilizamos o CLEAR, para limpar o fluxo e fazer com que se expanda */
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        Conteúdo 1
+    </div>
+    <div class="conteudo">
+        Conteúdo 2 
+    </div >
+    <div class="conteudo">
+        Conteúdo 3
+    </div>
+
+    <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit perferendis tempore laudantium facilis tempora at! Quaerat accusantium provident saepe sit quo esse sint dolores, ratione qui eaque alias illum.</p>
+
+   
+
+
+</body>
+</html>

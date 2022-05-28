@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento em bloco</title>
+    <style type="text/css">
+    .borda{
+        border: 5px solid #ff0000;  
+    }
+
+    .inline{
+        border: 5px solid  #0000ff;
+        padding: 2px;
+        display: block; /* Por padrão, o span é display inline, mas se caso eu definir no css que é block ele ficará block */
+        margin-bottom: 10px;
+    }
+    .inline1{ /* ATENÇÃO!!! Aqui ele ficou display inline sem precisar definir no css, pq  sua tag SPAN já é inline por padrão */
+        border: 5px solid  #0000ff;
+        padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ELEMENTO BLOCK -->
+<h1 class="borda">Bloco 1 </h1>
+<h1 class="borda">Bloco 2 </h1>
+
+
+<!-- ELEMENTO INLINE -->
+<span class="inline">Inline 1</span><!-- O tamanho da caixa fica de acordo com o tamanho do seu conteúdo -->
+<span class="inline1">Inline 2</span>
+</body>
+</html>

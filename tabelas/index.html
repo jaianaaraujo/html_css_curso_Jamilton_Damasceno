@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a fazer tabelas </title>
+</head>
+<body>
+    <!-- Para escrever a tabela precisamos da tag TABLE, e dentro dela criar uma estrutura -->
+    <table border="2" width="100%"> <!-- Quando colocamos o border estamos dizendo que a bordar terá 1 px -->
+        <tr>
+            <th>Código</th> <!-- Células de cabeçalho - contém informações de cabeçalho (criadas com o elemento <th> ) -->
+            <th>Produto</th> 
+            <th>Preço</th> 
+        </tr> <!-- Linhas e dados da tabela -->
+
+        <!-- LINHAS E DADOS NAS COLUNAS  A BAIXO -->
+     <tr>
+         <td>03326</td>
+         <td>Boneca</td>
+         <td>R$ 30,00</td>
+     </tr> 
+     
+     
+     <tr>
+         <td rowspan="2">Desconto</td> <!-- Ocupar o espaço de duas linhas -->
+         <td colspan="2">Cupom</td> <!-- COLSPAN permite agrupar duas colunas / extensão da coluna -->
+     </tr>
+
+     <tr>
+            <td colspan="2">Cupom</td>
+     </tr>
+    </table>
+<section>
+    <img src="./img/download (1).jfif" alt=""  width="300px">
+</section>
+</body>
+</html>

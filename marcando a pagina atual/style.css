@@ -1,0 +1,27 @@
+ul {
+   
+    list-style-type: none; /* Tira o estilo das listas */
+    margin: 0;
+    padding: 0;
+    background-color: #f7b600;
+    display: inline-block;
+    width: 200px;
+}
+
+
+ul a {
+background: #f7b600 url("./imagens/menu.png"); /* Colocamos a cor antes, como forma de garantia, caso a imagem não funcione */
+width: 200px;
+height: 40px;
+display: block;
+text-decoration: none;
+text-indent: 40px; /* Ele empurra para frente */
+line-height: 50px; /* A altura da linha do texto. Ele ficará centralizado se colocarmos o valor igual do whidt */
+color: black;
+}
+
+ a:hover, .selecionado a { /* Já deixo pré-selecionado  */
+    background-color: blueviolet;
+    color: #fff;
+    display: inline-block;
+}

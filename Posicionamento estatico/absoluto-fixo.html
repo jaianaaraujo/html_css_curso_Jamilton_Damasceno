@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento (Estático, Relativo, Absoluto e fixo)</title>
+    <style type="text/css">
+body{
+    background: #007fc7;
+}
+
+#container{
+    background: #fff;
+    width: 800px;
+    margin: 10px auto; /* 10 px em cima e em baixo, e auto nas lateriais (que deixará ele centralizado) */
+    padding: 10px;
+    position: relative; /* Coloquei position relative aqui, para que o position absolute não fiquei alinhado ao body (que teóricamente seria o container principal), mas sim a class container */
+}
+
+
+p{
+    width: 300px;
+}
+
+.absolute{
+    position: absolute; /* A posição absoluta ela é calcula de acordo com container que está o elemento */
+
+    /* ATENÇÃO!!!  é um tanto diferente do Relative. Enquanto o elemento com Position Relative utiliza seu próprio canto para referenciar sua posição, o elemento com Position Absolute se utiliza do ponto superior esquerdo de outros elementos. Estes elementos são os parentes dele do elemento com position absolute. Mais especificamente o pai. */
+    top: 80px;
+    right: 80px;
+    border: 1px solid red;
+    background-color: orange;
+
+
+}
+
+
+.fixed{
+    background-color: pink;
+    border: 2px solid gray;
+    position: fixed; /* Ele fica fora do fluxo também, assim como absolute, se alinha conforme o container principal. No caso o fixes ele fica fixo na posição que escolhermos */
+    bottom: 0;
+    right: 0;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+<h1>Posicionamento</h1>
+<!-- POSIÇÃO ABSOLUTA -->
+<p class="absolute">
+   <strong>P1</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+
+<!-- POSITION RELATIVE -->
+<p class="relative">
+    <strong>P2</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+
+<!-- POSIÇÃO FIXA -->
+<p class="fixed">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+
+
+
+<!-- OUTROS  -->
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p class="">
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+    </div>
+</body>
+</html>

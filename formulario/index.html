@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <!-- COMEÇANDO O FORMULÁRIO -->
+    <form action="">
+       <label for="TheName">Login:</label>
+       <input type="text"  name="LoginTeste" id="TheName">
+       <br><br>
+       <label for="password">password:</label>
+       <input type="password">
+<br><br>
+       <!-- CRIANDO UM BOTÃO -->
+
+       <input type="submit" value="Logar"> <!-- O value, define  o texto para o botão -->
+                                            <!-- O type, como subimt siginifica que irei eniar esas informações  -->
+    </form>
+
+<!-- SEGUNDO FORMULÁRIO -->
+    <h2>Sign Up</h2>
+
+    <form action="">
+        <label for="TheName">Sex:</label> <br>
+        <input type="radio"  name="sex" value="M">Man<br> <!-- Como name é igual, precisamos saber o que foi psaado,e para isso, utilizamos o VALUE -->
+        <input type="radio"  name="sex" value="F">Woman <br> <!-- Para limitar a quantidade de radios escolhidos, utilizamos o mesmo name para ambos os inputs -->
+        <input type="radio"  name="sex" value="F">Others <br><br>
+
+        <h4>Interest</h4>
+        <input type="checkbox"   name="interests"  id="soccer"> <label for="soccer">Soccer</label>  <br>
+        <input type="checkbox"   name="interests" id="swim" > <label for="swim">Swim </label> <br>
+        <input type="checkbox"   name="interests" id="run" > <label for="run"></label> Run <br><br>
+
+        Estado:
+        <select id="UF" name="UF">
+            <option disabled select></option>
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA" selected>Bahia</option> <!-- Slected para que aquele opção ela possa vim como padrão -->
+        </select>
+<br><br>
+
+Observações: <br>
+<textarea name="" id="" cols="30" rows="5"></textarea>
+ <br>
+
+ <!-- BOTÃO ENVIAR -->
+ <input type="submit" value="Enviar">
+ <!-- BOTÃO EXCLUIR -->
+ <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

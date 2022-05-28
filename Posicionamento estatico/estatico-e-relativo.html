@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento (Estático, Relativo, Absoluto e fixo)</title>
+    <style type="text/css">
+body{
+    background: #007fc7;
+}
+
+#container{
+    background: #fff;
+    width: 800px;
+    margin: 10px auto; /* 10 px em cima e em baixo, e auto nas lateriais (que deixará ele centralizado) */
+    padding: 10px;
+}
+
+h1{position: static;} /* Position: static - é o posicionamento padrão aplicado nos elementos */
+
+p{
+    width: 300px;
+}
+
+.relative{
+border: 4px solid red;
+position: relative; /* Move o elemento da posição que está para baixo, para cima, para os lados. Isso não afeta a posição dos elementos adjacentes pois permanecem na posição que estarião no fluxo normal */
+/* PROPRIEDADES DE DESLOCAMENTO DO RELATIVE:position: top, right, left, bottom; */
+/* Ele se move levando em consideração a posição que ele já se encontra */
+top: 10px;
+left: 80px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+<h1>Posicionamento</h1>
+<p>
+   <strong>P1</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+
+<p class="relative">
+    <strong>P2</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+<p>
+    <strong>P3</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur error enim itaque exercitationem repellat eligendi voluptas architecto veritatis, fuga sint quis suscipit nisi aperiam excepturi eveniet. Tenetur, laborum obcaecati.
+</p>
+    </div>
+</body>
+</html>

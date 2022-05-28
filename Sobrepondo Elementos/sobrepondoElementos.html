@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreponto Elementos</title>
+
+    <style type="text/css">
+
+    .conteudo1{
+        border: 5px solid #ff0000;
+        background: orange;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+        position: absolute; 
+        top: 80;
+        left: 80px;
+        z-index: 0 ; /* Z-index ela defini qual elemento aparecerá primeiro */
+      
+    }
+    .conteudo2{
+        border: 5px solid #ff0000;
+        background: green;
+        width: 200px;
+        height: 200px;
+        position: absolute; 
+        top: 160px; /* Tenho que colocar o posicionamento e suas devidas medidas e em seguida defino o z-index */
+        left: 160px;
+        z-index: 1; /* Ele aparecerá na frente, quanto maior o número, mais ele aparecerá */
+       
+    }
+
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+        Conteudo 1
+    </div>
+
+    <div class="conteudo2">
+        Conteudo 2
+    </div>
+
+ 
+</body>
+</html>

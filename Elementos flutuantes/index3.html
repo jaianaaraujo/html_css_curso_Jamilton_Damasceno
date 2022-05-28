@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .conteudo{
+            background: blue;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            
+        }
+
+        #principal{
+        border: 8px solid red;
+        background: green; /* 1) Quando o a class conteudo está sem o float, o fundo do principal aparece normalmente */
+        /* 2) Quando aplica o FLOAT no ,conteudo, o fundo do principal não se expande, pq utilizamos elemento flutuante dentro de outra div */
+        /* 3) Para conseguir expandir o fundo, preciso utilizar o CLEAR, ele limpa o fluxo flutuante, e com isso, automaticamente o fundo do principal vai expandir */
+        }
+
+        .clear{
+            clear: both; /* 4) Quando coloco uma div dentro da principal, e no css, utilizo a propriedade clear: both, ela permite que o principal possa expandir, ou seja, ele limpa o fluxo, ele faz isso, pq essa div que não é flutuante, possa ficar corretamente */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clear"></div>
+    <!-- DIV DENTRO DA DIV -->
+    <div id="principal">
+        <div class="conteudo">
+            Conteúdo 1
+        </div>
+        <div class="conteudo">
+            Conteúdo 2 
+        </div >
+        <div class="conteudo">
+            Conteúdo 3
+        </div>
+
+        <div class="clear"></div>
+        </div><!-- Em vez de criar uma div class clear aqui e manusear no css. Podemos colocar no css: overflow: auto e whidth: 100% -->
+
+        
+    
+</body>
+</html>

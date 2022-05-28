@@ -1,0 +1,25 @@
+/* BORDER-RADIUS */
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 20px;
+    border-radius: 10px 50px 80px 100px;
+    margin: 20px;
+}
+
+
+.arredondamento{
+    border-radius: 150px;
+}
+
+
+/* BORDER BOX */
+
+#caixa1{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+    box-sizing: border-box; /* faz com qie tenha padding, mas que isso não influencie no seu tamanho  */
+}

@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+    <html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos Flutuantes Prática</title>
+        <style>
+    body{
+        background-color: #f4f4f4;
+    }
+    #princial{
+        width: 920px;
+    
+    }
+
+    .noticia{
+        background: #e5e5e5;
+        padding: 5px;
+        width: 280px;
+        margin: 8px;
+        float: left;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+    .imagem-galeria{
+        background: #dda0dd;
+        width:280px;
+        padding: 5px;
+        float: left;
+        margin: 15px;
+        margin-right: 5px;
+    }
+
+    .imagem-galeria > img{
+        margin-left: 8px; margin-top: 5px;
+    } 
+        </style>
+    </head>
+
+    <!-- INICIO DO BODY -->
+    <body>
+
+        <div id="princial"> <!-- inicio principal -->
+        <div>
+            <!-- INICIO NOTICIA -->
+    <div class="noticia">
+        <h2>Novidades sobre o mundo 1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore sed totam voluptatibus quasi maiores.</p>
+        <a href="https://noticias.uol.com.br/ultimas/" target="_blanck">Veja mais</a> <!-- target: _blank, para que quando clicar no link possa abrir uma nova aba -->
+    </div>
+    <div class="noticia" >
+        <h2>Novidades sobre o mundo 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore sed totam voluptatibus quasi maiores.</p>
+        <a href="https://noticias.uol.com.br/ultimas/" target="_blanck">Veja mais</a> 
+    </div>
+
+
+
+        </div> <!-- Fim div noticias -->
+    
+    
+        <div class=".clear"></div>
+
+        <div class="galeria"> <!-- fotos -->
+    <div class="imagem-galeria"><img src="./assets/img/imagem1.png" alt="">
+        <p>Resumo</p>
+    </div>
+
+        <div class="galeria"> <!-- fotos -->
+    <div class="imagem-galeria"><img src="./assets/img/imagem2.png" alt="">
+        <p>Resumo</p>
+    </div>
+
+        <div class="galeria"> <!-- fotos -->
+    <div class="imagem-galeria"><img src="./assets/img/imagem3.png" alt="">
+        <p>Resumo</p>
+    </div>
+
+        <div class="galeria"> <!-- fotos -->
+    <div class="imagem-galeria"><img src="./assets/img/imagem4.png" alt="">
+        <p>Resumo</p>
+    </div>
+
+    <div class="imagem-galeria"><img src="./assets/img/imagem5.png" alt="">
+        <p>Resumo</p>
+    </div>
+
+    <div class="galeria"> <!-- fotos -->
+        <div class="imagem-galeria"><img src="./assets/img/imagem1.png" alt="">
+            <p>Resumo</p>
+        </div>
+
+        </div> <!-- Fim div fotos -->
+    </div> <!-- Fim principal -->
+
+    </body>
+    </html>

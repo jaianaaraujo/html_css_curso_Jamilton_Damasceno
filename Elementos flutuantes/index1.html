@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+
+    <!-- INICIO DO CSS -->
+    <style type="text/css">
+        .conteudo{
+            background: blue;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+        }
+        .conteudo1{
+            background: red;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            float: right; /* 1)Conseguimos criar um fluxo diferenciado que faz com que os conteúdo fluem para esquerda e para direita */
+            /* 2) Quando utilizamos float, o elemento que estamos manipulando ele estará em outro fluxo. Ou seja, como na esqueda já tem um elemento azul, e eu coloco no vermelho um float left, o vermleho ira para esquerda e ficara em cima do elemento azum, pq para o azul, esse elemento vermelho nem existe, já que ele está em outro fluxo */
+        }
+
+        .informacao{
+            background: purple;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            float: left; /* Observe que elas ficaram uma ao lado da outra a esquerda, pq todas devem ficar a esquerda, no entanto não tem espaço, e por isso cria esse efeito */
+            margin-top: 30px;  
+        
+        }
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Elementos flutuantes são importantes para montar o layout -->
+
+    <div class="conteudo1">
+        Conteúdo 1
+    </div>
+    <div class="conteudo">
+        Conteúdo 2 
+    </div >
+    <div class="conteudo">
+        Conteúdo 3
+    </div>
+
+
+    <div class="informacao">
+        Informação 1
+    </div >
+    <div class="informacao">
+        Informação 2
+    </div >
+    <div class="informacao">
+        Informação 3
+    </div >
+
+
+  
+   
+</html>

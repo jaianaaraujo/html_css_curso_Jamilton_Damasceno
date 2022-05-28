@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <section>
+        <h1>Cadastro</h1>
+        <form action="" method=""> <!-- Method é como será processado. GET ser enviado através de uma URL, o get deixa visivel na url. Já o post utiliza o conceito de http. -->
+            <div>
+                <input type="text" name="name" id="nome" placeholder="Adicione o seu nome"> <!-- Name para definir o nome do valor -->
+                <label for="nome">Nome</label>
+            </div>
+
+            <div>
+                <input type="password" name="email" id="email" placeholder="Adicione o seu email"> <!-- Name para definir o nome do valor -->
+                <label for="email">Email</label>
+            </div>
+
+            <div>
+                <input type="password" name="senhaConfirmacao" id="senhaConfirmacao"placeholder="Adicione o seu email" required> <!-- Name para definir o nome do valor -->
+                <!-- REQUIRED - informa que é obrigatório -->
+                <label for="senhaConfirmacao">Confirmar sua senha</label>
+            </div>
+
+            <div>
+               <label for="genero">Genero</label>
+            </div>
+
+            <div>
+                <label for="observacoes">Observações</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="observacoes"></textarea>
+            </div>
+
+            <div>
+                <button type="reset">Apagar</button> <!-- O reset ele apaga o formulário -->
+            </div>
+
+            <div>
+            <button submit=""></button>
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>

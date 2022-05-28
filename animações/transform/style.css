@@ -1,0 +1,63 @@
+/* ======== TRANSITION ========== */
+/* 
+
+++ O QUE É?
+
+É um módulo do css que define como os elementos regrados com css podem ter animações de transformação em um espaço bidimensional ou tridimensional. Essa propriedade permite TRANSFORM permite manipular visualmente um elemento , o inclinando, rodando, diminuindo ou aumentando
+
+++ SINTAXE
+
+transform: function; - passamos o valor da função que queremos que ele execute
+
+transform: sacele(2); - Estamos dizendo que o elemento terá uma escala de 2, e será aplicada no x e y 
+
+
+++ SCALE
+
+A função scale()  se especifica com um ou dois valores, que representam  o valor da escala que se aplicará em cada direção do elemento. 
+
+scale(1); - um valor para aplicar em x e y
+scale(1,1); - dois valores para x e y separadamente
+
+
+++ SKEW
+
+A propriedade SNEW() se especifica com um (ou alguns) valores, que representa a quantidde de desvio que se aplicará em cada direção. Se for atribuído um valor, se aplicará para X e não será aplicado para Y
+
+ex: SKEW(15deg);
+
+
+
+++ ROTATE
+
+A propriedade ROTATE() define uma transformação que gira um elemento ao redor de um ponto fixo no plano. Utilizamos a medida deg que representa um ângulo.
+
+
+
+++ TRANSLATE
+
+A propriedade TRANSLATE() contém um vetoramento bidimensional que movimenta o elemento para esquerda (se o valor for negativo) ou para a direita (se o valor for positivo)
+
+ex: TRANSLATE(50px)
+
+
+
+++ TRANSFORM-ORIGIN
+
+A propriedade TRANSFORM-ORIGIN() permite modificar as transformações atribuídas a um elemento. Podemos atribuir como valor: px, top, bottom, right, left
+
+
+
+
+
+*/
+
+
+button{
+    background-color: #eaeaea;
+    color: #000;
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    transform: SKEW(10deg) /* Exemplo */
+}

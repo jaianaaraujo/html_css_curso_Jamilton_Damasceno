@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS - ESTILIZAÇÃO  -->
+    <style type="text/css">
+body, html {
+    margin: 0;
+    font: 16px "Lato", sans-serif ;
+    color: #777;
+    height: 100%;
+}
+
+
+.conteudo{
+    color: #777;
+    background-color: #fff;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+/* EFEITO PARALAX */
+
+.caixa1, .caixa2, .caixa3, .caixa4{
+height: 100%;
+opacity: 0.7;
+background-repeat: no-repeat; /* Para ela não repetir */
+background-size: cover; /* para ela ocupar toda a tela */
+background-position: center;
+background-attachment: fixed; /* Efeito paralax */
+
+}
+
+.caixa1{
+background-image: url(./imagens/imagem1.jpg);
+}
+
+
+.caixa2{
+    background-image: url(./imagens/imagem2.jpg);
+}
+
+.caixa3{
+    background-image: url(./imagens/imagem3.jpg);
+}
+
+/* EDITANDO O CONTEÚDO DAS CAIXAS */
+
+.conteudo-titulo{
+    position: absolute; /* Mais fácil de centralizar o conteúdo com a posição absoluta */
+    left: 40%;
+    top: 45%;
+    color: #fff;
+    background-color: #111;
+    font-size: 25px;
+    letter-spacing: 5px; /* Espaço entre as letras */
+    padding: 18px;
+    text-align: center;
+}
+
+
+
+    </style>
+    <title>Parallax</title>
+</head>
+<body>
+    <div class="caixa1">
+       <div class="conteudo-titulo">
+           PASSEIO DE BALÕES
+       </div>
+    </div>
+
+    <div class="conteudo">
+     <h3>Parallax</h3>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+    </div>
+
+    <div class="caixa2">
+        Caixa 2
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+       </div>
+
+       <div class="caixa3">
+        Caixa 3
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint atque eum eius voluptatem qui deserunt fugiat inventore, ab quia odio provident a esse nihil, officia recusandae nisi quibusdam molestiae ipsa! </p>
+       </div>
+
+       <footer>
+       
+        
+      </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+
+/* 
+px -> medida de (TAMANHO FIXO)
+% -> medida de (TAMANHO RELATIVO) ao tamanho padrão adotado pelo navegador, que no caso o tamanho padrão é 16
+em -> tamanho relativo ao container pai - É O MAIS UTILIZADO PARA TAMANHO RELAIVOS
+*/
+
+/* ATENÇÃO!! Por padrão do navegador se tem a fonte de 16px, quando usamos porcetagem, e colocamos 100% estamos utilizando 100% do tamanho padrão do navegador que no caso é 16px, por isso que não altera */
+
+
+div{
+    font-size: 60px; /* Quando colocamos 1em estamos alterado o tamanho do container pai, tudo que está dentro irá alterar */
+
+}
+
+
+.texto{
+    font-size: 2em; /* Nesse caso como coloquei 2 rem, significa que será o dobro do que coloquei no container */
+}
+
+texto2{
+    font-size: 1em; /* Representa o valor total que coloquei no container, no caso, 12m representa 60px */
+}
+

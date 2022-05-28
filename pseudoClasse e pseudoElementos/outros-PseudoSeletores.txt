@@ -1,0 +1,35 @@
+1) :invalid    = A pseudo-classe :invalid do CSS estiliza o elemento <input> dentro do
+elemento <form> cujos conteúdos não foram inseridos corretamente ou não
+foram validados.
+
+
+
+2) :nth-child(1)    =  A pseudo-classe :nth-child() do CSS coincide com um ou mais elementos em
+função da sua posição dentro de um grupo de elementos-irmãos.
+Logo, a pseudo-classe :nth-child(nº do elemento escolhido) realiza a
+função de escolher por ordem apenas um (ou alguns) elemento(s) entre vários
+elementos iguais ou de classe iguais. Por exemplo: foi escolhido o primeiro li
+
+
+3) :required     =   O :required é um atributo booleano, e tem a função de aplicar estilos se o
+elemento usa <input:required>
+Quando está presente, o required impede que o formulário seja enviado caso o
+campo que tem esse atributo não tenha sido preenchido pelo usuário.
+*Nota: O required funciona com os seguintes tipos de entrada: text, search,
+url, tel, email, password, date pickers, number, checkbox, radio e
+file
+  EX: < input type=”text” required >
+
+
+
+4) :valid      = A pseudo-classe :valid do CSS representa qualquer elemento <input> ou outro
+elemento do <form> cujo conteúdo se validou corretamente. Isso permite que
+os campos válidos adquiram facilmente uma aparência que ajuda o usuário a
+confirmar que seus dados foram inseridos corretamente.
+
+
+5) :disabled    =   Se aplica quando um elemento está desabilitado. Quando algum elemento
+por algum motivo não pode ser acessado, colocamos: disabled.
+Normalmente se utiliza para dar estilos aos campos que os usuários não
+podem completar no formulário, ou simplesmente quando uma opção está
+desativada.
